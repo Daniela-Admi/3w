@@ -44,8 +44,3 @@ footer {
     justify-items: center !important;
   }
 }
-@media (min-width: 450px) {
-  #banner-plantillas {
-    margin: 3rem !important;
-  }
-}

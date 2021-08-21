@@ -1,0 +1,19 @@
+{
+  "name": "git-practica",
+  "version": "1.0.0",
+  "description": "ls",
+  "main": "npm install",
+  "scripts": {
+    "test": "yws"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniela-Admi/git-desde-coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniela-Admi/git-desde-coderhouse/issues"
+  },
+  "homepage": "https://github.com/Daniela-Admi/git-desde-coderhouse#readme"
+}
