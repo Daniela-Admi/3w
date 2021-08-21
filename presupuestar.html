@@ -1,136 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>3W</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="3W" content="Venta de servicios en desarrollo web y SEO" />
-    <title>3W</title>
+    <!-- Tag de Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--My css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrapp css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <!--logo & menu-->
+    <!-- menu con logo -->
     <header>
-      <!--logo -->
-      <div class="wrapper-header">
-        <div class="logo">
-          <a href="index.html">
-            <img src="imagen/logo.png" alt="Logo de la empresa"
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="imagen/logo.png" alt="imagen logo 3w"
           /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="quienessomos.html"
+                  ><strong>Quienes Somos</strong></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="productosysoluciones.html"
+                  ><strong>Productos & Soluciones</strong></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="presupuestar.html"
+                  ><strong> Presupuestar</strong></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="blog.html">
+                  <strong> BLOG</strong></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <!--menu-->
-        <nav class="menu">
-          <ul>
-            <li class="nav__menu-item">
-              <a href="quienessomos.html">QUIENES SOMOS</a>
-            </li>
-            <li class="nav__menu-item">
-              <a href="productosysoluciones.html">PRODUCTOS Y SOLUCIONES</a>
-            </li>
-            <li class="nav__menu-item"><a href="aprende.html">APRENDE</a></li>
-            <li class="nav__menu-item">
-              <a href="presupuestar.html">PRESUPUESTAR</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!--fin del header-->
+      </nav>
     </header>
-    <!--encabezado de contacto-->
-      <div class="contacto-titulo">
-        <h2>Todo empieza con un "Hola"</h2>
-        <p>Nos encantaria empezar a charlar contigo. 
-          Solo completa con tus detalles de contacto basico 
-          y dejanos un número abajo, y te contactaremos. Podrás encontrar en 3W un aliado digital que te abrirá las puertas de tu negocio en internet. 
-          Nuestro trabajo tiene un único próposito ¡Nuestros Clientes!.</p> 
-          <p> Resolvé tus dudas de manera rápida. Aquí podrás gestionar rápidamente las dudas que tengas sobre: Facturación, Modificación de tus productos e información detallada de cada uno de ellos.
-          </p>
+    <!--banner encabezado-->
+    <div class="container-fluid">
+      <img
+        src="imagen/background0.jpg"
+        alt="imagen tipo portada"
+        class="d-block w-100"
+      />
+    </div>
+    <!--banner formulario de contacto-->
+    <div class="container card-0 justify-content-center">
+      <div class="card-body px-sm-4 px-0">
+        <div class="row justify-content-center mb-5">
+          <!--encabezado de contacto-->
+          <div class="col-md-10 col">
+            <h3
+              class="font-weight-bold ml-md-0 mx-auto text-center text-sm-left"
+            >
+              Todo empieza con un "Hola"
+            </h3>
+            <p class="mt-md-4 ml-md-0 ml-2 text-center text-sm-left">
+              Nos encantaria empezar a charlar contigo. Solo completa con tus
+              detalles de contacto basico y dejanos un número abajo, y te
+              contactaremos.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center round">
+          <div class="col-lg-10 col-md-12">
+            <div class="card shadow-lg card-1">
+              <div class="card-body inner-card">
+                <div class="row justify-content-center">
+                  <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="first-name">Nombre</label
+                      ><input
+                        type="text"
+                        class="form-control"
+                        id="first-name"
+                        placeholder="Tipea tu nombre"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="Mobile-Number">Número de Celular</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="Mobile-Number"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail4">Tipo de proyecto</label>
+                      <select class="form-control">
+                        <option>Diseño Web</option>
+                        <option>Tienda Virtual</option>
+                        <option>SEO</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="time">Tiempo maximo del proyecto</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="time"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="last-name">Apellido</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="last-name"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Correo electronico</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="Evaluate Budget"
+                        >Franja horaria de contacto</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="Evaluate Budget"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail4">Pais</label>
+                      <select class="form-control">
+                        <option>Argentina</option>
+                        <option>Brasil</option>
+                        <option>Chile</option>
+                        <option>Colombia</option>
+                        <option>Mexico</option>
+                        <option>Panama</option>
+                        <option>Paraguay</option>
+                        <option>Peru</option>
+                        <option>Puerto Rico</option>
+                        <option>Venezuela</option>
+                        <option>Uruguay</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-12 col-lg-10 col-12">
+                    <div class="form-group files">
+                      <label class="my-auto">Sube tu archivo</label>
+                      <input id="file" type="file" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-12 col-lg-10 col-12">
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea2">Mensaje</label>
+                      <textarea
+                        class="form-control rounded-0"
+                        id="exampleFormControlTextarea2"
+                        rows="5"
+                      ></textarea>
+                    </div>
+                    <div class="mb-2 mt-4">
+                      <div class="text-right">
+                        <button type="button" class="btn btn-outline-info">
+                          <small class="font-weight-bold"
+                            >Enviar Formulario</small
+                          >
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--formulario de contacto-->
-      <div class="contacto-formulario">
-        <form>
-          <label for="fname">Nombre y Apellido</label>
-          <input type="text" id="fname" name="firstname" placeholder="Tu nombre y apellido">
-          <label for="lname">Número de Conctacto</label>
-          <input type="text" id="lname" name="lastname" placeholder="Tu número particular..">
-          <label for="country">Pais</label>
-          <select id="country" name="country">
-            <option value="argentina">Argentina</option>
-            <option value="colombia">Colombia</option>
-            <option value="mexico">Mexico</option>
-            <option value="uruguay">Uruguay</option>
-            <option value="venezuela">Venezuela</option>
-          </select>
-          <label for="subject">Consulta</label>
-          <textarea id="subject" name="subject" placeholder="Describe tu consulta.." style="height:100px"></textarea>
-          <input id=btn type="submit" value="Enviar">
-        </form>
-      </div>
-</div>
     </div>
     <!--fin de formulario de contacto-->
-    <!-- el paso a paso -->
-    <div class="paso-a-paso">
-      <h2>Tu 3W en pocos pasos</h2>
-      <p>
-        Cuando contratas un sitio web 3W tienes incluido un dominio con
-        extensión .com. Lo que deberás informarnos son tres opciones del nombre
-        con el cual quieres dar a conocer tu sitio o tienda online que irá junto
-        a la extensión .com.
-      </p>
-    </div>
-    <div class="wrapper">
-      <!--  paso 1 -->
-      <div class="box">
-        <img src="https://img.icons8.com/wired/64/000000/1-circle.png" />
-        <p>Realiza la compra de tu plan</p>
+
+    <!--seccion beneficios-->
+    <div class="beneficios">
+      <!--encabezado beneficios-->
+      <div class="titulo-beneficios">
+        <h2>No sólo un servicio de diseño web.</h2>
+        <p>
+          Nuestros paquetes incluyen todo lo necesario para que puedas enfocarte
+          en lo que haces mejor: impulsar tu negocio.
+        </p>
       </div>
-      <!--  paso 2 -->
-      <div class="box">
-        <img src="https://img.icons8.com/wired/64/000000/2-circle.png" />
-        <p>Te contactamos y nuestro equipo releva la infomación</p>
-      </div>
-      <!--  paso 3 -->
-      <div class="box">
-        <img src="https://img.icons8.com/wired/64/000000/3-circle--v1.png" />
-        <p>Te avisamos cuando tu producto esté listo para su revisión</p>
-      </div>
-      <!--  paso 4 -->
-      <div class="box">
-        <img src="https://img.icons8.com/wired/64/000000/4-circle.png" />
-        <p>Listo tu negocio esta en internet</p>
-      </div>
-    </div>
-    <!--fin del paso a paso-->
-      <!--seccion beneficios-->
-      <div class="beneficios">
-        <!--encabezado beneficios-->
-        <div class="titulo-beneficios">
-          <h2>No sólo un servicio de diseño web.</h2>
-          <p>
-            Nuestros paquetes incluyen todo lo necesario para que puedas enfocarte
-            en lo que haces mejor: impulsar tu negocio.
-          </p>
-        </div>
-        <!--benef contenido-->
-        <div class="benif-contenido">
-          <!--benef 1-->
-          <div>
-          <img class="img-beneficios" 
+      <!--benef contenido-->
+      <div class="benif-contenido">
+        <!--benef 1-->
+        <div>
+          <img
+            class="img-beneficios"
             src="https://img.icons8.com/dotty/80/000000/customer-insight.png"
-            alt="icono nos contactamos" style="width: 70px"
+            alt="icono nos contactamos"
+            style="width: 70px"
           />
           <h3>Contenido generado por expertos</h3>
           <p>
-            Nos encargamos de todo: textos, imágenes, videos, mapas, formularios,
-            redes sociales, landing pages para promociones, etc.
+            Nos encargamos de todo: textos, imágenes, videos, mapas,
+            formularios, redes sociales, landing pages para promociones, etc.
           </p>
         </div>
         <!--benef 2-->
         <div>
-          <img class="img-beneficios"
+          <img
+            class="img-beneficios"
             src="https://img.icons8.com/dotty/80/000000/facebook-like.png"
-            alt="icono negocio listo" style="width: 70px"
+            alt="icono negocio listo"
+            style="width: 70px"
           />
           <h3>Modificaciones</h3>
           <p>
@@ -140,9 +267,11 @@
         </div>
         <!--benef 3-->
         <div>
-          <img class="img-beneficios"
+          <img
+            class="img-beneficios"
             src="https://img.icons8.com/pastel-glyph/64/000000/online-package-tracking.png"
-            alt="icono revisamos" style="width: 70px"
+            alt="icono revisamos"
+            style="width: 70px"
           />
           <h3>Listo para móviles y tablets</h3>
           <p>
@@ -152,45 +281,53 @@
         </div>
         <!--benef 4-->
         <div>
-          <img class="img-beneficios"
+          <img
+            class="img-beneficios"
             src="https://img.icons8.com/dotty/80/000000/google-plus.png"
-            alt="icono de google-plus" style="width: 70px"
+            alt="icono de google-plus"
+            style="width: 70px"
           />
           <h3>Optimizado para aparecer en Google</h3>
           <p>
             Las páginas cumplen con las buenas prácticas de Google, favoreciendo
             al posicionamiento en los resultados.
           </p>
-          </div>
-          <!--benef 5-->
-          <div>
-          <img class="img-beneficios"
+        </div>
+        <!--benef 5-->
+        <div>
+          <img
+            class="img-beneficios"
             src="https://img.icons8.com/ios/50/000000/diploma.png"
-            alt="certificado sll" style="width: 70px"
+            alt="certificado sll"
+            style="width: 70px"
           />
           <h3>Tu Dominio con certificado SSL GRATIS</h3>
           <p>
-            Tu negocio o proyecto merece el mejor nombre en Internet. Nosotros te
-            lo damos sin cargo.
+            Tu negocio o proyecto merece el mejor nombre en Internet. Nosotros
+            te lo damos sin cargo.
           </p>
-          </div>
-          <!--benef 6-->
-          <div>
-          <img class="img-beneficios"
+        </div>
+        <!--benef 6-->
+        <div>
+          <img
+            class="img-beneficios"
             src="https://img.icons8.com/ios/50/000000/ftp-server.png"
-            alt="icono de hosting" style="width: 70px"
+            alt="icono de hosting"
+            style="width: 70px"
           />
           <h3>Web Hosting & Correo Electrónico</h3>
           <p>
             Cuentas de email con tu dominio y espacio de hosting para tu página
             web.
           </p>
-          </div>
-          <!--benef 7-->
-          <div>
-          <img class="img-beneficios"
+        </div>
+        <!--benef 7-->
+        <div>
+          <img
+            class="img-beneficios"
             src="https://img.icons8.com/ios/50/000000/shopping-bag--v1.png"
-            alt="icono bolsa de compra" style="width: 70px"
+            alt="icono bolsa de compra"
+            style="width: 70px"
           />
           <h3>Tienda online & carrito de compras (opcional)</h3>
           <p>
@@ -198,38 +335,43 @@
             catálogo, gestión de clientes y compras, carga masiva de productos,
             publicación en Facebook, etc.
           </p>
-          </div>
-          <!--benef 8-->
-          <div>
-          <img class="img-beneficios"
+        </div>
+        <!--benef 8-->
+        <div>
+          <img
+            class="img-beneficios"
             src="https://img.icons8.com/wired/64/000000/shop.png"
-            alt="tienda online con blog" style="width: 70px"
+            alt="tienda online con blog"
+            style="width: 70px"
           />
           <h3>Blog(solo plan tienda)</h3>
           <p>
             Una excelente manera de difundir tus noticias y acontecimientos más
-            relevantes para posicionarte como un experto en tu nicho de negocios.
+            relevantes para posicionarte como un experto en tu nicho de
+            negocios.
           </p>
         </div>
         <!--benef 9-->
         <div>
-          <img class="img-beneficios"
+          <img
+            class="img-beneficios"
             src="https://img.icons8.com/dotty/80/000000/headphones.png"
-            alt="icono de auriculares" style="width: 70px"
+            alt="icono de auriculares"
+            style="width: 70px"
           />
           <h3>Ejecutivo de cuenta</h3>
           <p>
-            Contarás con atención preferencial por teléfono, email y WhatsApp para
-            resolver cualquier inquietud.
+            Contarás con atención preferencial por teléfono, email y WhatsApp
+            para resolver cualquier inquietud.
           </p>
         </div>
-        </div>
-        </div>
-      <!--fin de beneficios-->
-    <!--pie de pagina-->
+      </div>
+    </div>
+    <!--fin de beneficios-->
+    <!--Pie de Pagina-->
     <footer>
       <!--redes sociales-->
-      <div class="social">
+      <div class="social mt-5 mb-3">
         <a href="#"
           ><img
             src="https://img.icons8.com/ios/50/ffffff/instagram.png "
@@ -249,5 +391,11 @@
       <!--copyright-->
       <p><strong> &copy; 2021 3W Todos los Derechos Reservados</strong></p>
     </footer>
+    <!-- bootstrapp js with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

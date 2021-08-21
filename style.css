@@ -6,47 +6,7 @@ rgb(247, 232, 225) beige
 rgb(25, 60, 70) azul
 #EAE0EE fondo titulos
 */
-/*body*/
-body {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  height: 100%;
-  margin: 0px;
-  width: 100%;
-}
-/*titulos*/
-h2,
-h3,
-h4 {
-  color: rgb(42, 43, 61);
-  line-height: 2.1;
-}
-/*parrafos*/
-p {
-  line-height: 1.6;
-}
-/*imagenes*/
-img {
-  padding: 3px;
-  margin: 10px 2px 2px 2px;
-}
-/*listas - esto es parte del menu*/
-li:last-child {
-  border-right: none;
-}
-li a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px 15px;
-  margin: 5px 10px;
-}
-li a:hover,
-li a:focus {
-  box-shadow: inset 0.4em 0 0 0;
-  transition: transform 3s;
-  color: rgb(176, 45, 114);
-}
+
 /* footer*/
 footer {
   color: white;
@@ -54,306 +14,38 @@ footer {
     336deg,
     rgb(247, 232, 225) 0%,
     rgb(176, 45, 114) 35%,
-    rgb(119, 89, 84) 100%
+    rgb(47, 162, 194) 100%
   );
   margin: 0px 1px 1px 1px;
   padding: 5px;
   text-align: center;
 }
-/* logo + menu en header */
-.wrapper-header {
-  display: grid;
-  grid-row: 100px auto 200px;
-  grid-template-rows: 140px;
-  grid-template-areas: "logo menu";
-}
-
-/*logo*/
-.logo {
-  display: flex;
-  grid-area: logo;
-  justify-content: space-between;
-}
-.logo:hover {
-  filter: none;
-  transform: scale(1.1);
-  transition: filter 2s, transform 1s;
-}
-/* menu*/
-.menu ul {
-  display: flex;
-  list-style-type: none;
-  margin-top: 20px;
-  padding: 0;
-}
-.menu li {
-  display: inline-block;
-  width: 90%;
-  position: relative;
-  font-size: 14px;
-  margin: 3px;
-}
-.menu li a {
-  text-decoration: none;
-  color: rgb(176, 45, 114);
-  font-weight: bold;
-}
-li:last-child {
-  border-right: none;
-}
-@media screen and (max-width: 768px) {
-  .menu li a {
-    display: block;
-    font-size: 12px;
+/* carrusel*/
+@media (min-width: 1200px) {
+  #carousel-img {
+    width: 1350px;
+    height: 650px;
   }
 }
-
-/*botones*/
-.button,
-#btn {
-  background-color: rgb(176, 45, 114);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px;
-  text-decoration: none;
-  margin-bottom: 0px;
-}
-.button:hover,
-#btn:hover {
-  background-color: rgb(25, 60, 70);
-  color: white;
-  font-weight: bold;
-  border: solid 2px;
-  font-size: 17px;
-}
-/* index - banner principal*/
-.banner-principal {
-  display: flex;
-  background-image: url(imagen/banner-principal.jpg);
-  background-repeat: no-repeat;
-  height: 500px;
-  width: cover;
-  border: 3px;
-  margin-top: 0px;
-}
-.contenido-banner {
-  background-color: rgb(25, 60, 70);
-  padding: 15px;
-  opacity: 85%;
-  height: 270px;
-  width: 300px;
-  transform: translateY(25px, -150px);
-  margin: 80px 45px;
-}
-.banner-titulo,
-.banner-texto {
-  color: white;
-}
-
-/* index - plantillas */
-.titulo-plantillas {
-  text-align: center;
-  height: 100px;
-  margin-top: 30px;
-}
-.contenedor-plantillas {
-  display: grid;
-  gap: 7px;
-  padding: 20px;
-  grid-template-columns: repeat(4, 1fr);
-}
-.plantilla {
-  border-radius: 2px;
-  margin: 3px;
-  overflow: hidden;
-  width: 300px;
-  height: 420px;
-}
-.plantilla:hover {
-  filter: none;
-  transform: scale(1.1);
-  transition: filter 3s, transform 1s;
-}
-
-/* index - contacto */
-.contacto-inicio {
+#corousel-content {
+  background-color: rgb(47, 162, 194);
+  color: antiquewhite;
   padding: 5px;
-  text-align: center;
-  background-color: #eae0ee;
-}
-.img-contacto {
-  border-radius: 50%;
-}
-.img-contacto:hover {
-  transform: scale(0.8);
-}
-/* encabezados  */
-.quienes-somos,
-.aprende,
-.servicios,
-.contacto-titulo {
-  border: solid 2px #eee;
-  background-color: #eae0ee;
-  padding: 30px;
-}
-/* quienes somos html */
-.sobre {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-.sobre-contenido {
-  padding: 50px;
-}
-
-/* servicios en index html */
-.servicios-inicio {
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  padding: 65px;
-}
-.serv-inicio-contenido {
-  padding: 20px;
-  margin: 3px 15px;
-}
-/* productos y soluciones html - servicios*/
-
-.box ul {
-  list-style-type: none;
-  line-height: 1.7;
-}
-.precio {
-  font-size: 135%;
-  color: rgb(25, 60, 70);
-}
-/* productos y soluciones html - tu 3w en pocos pasos*/
-.wrapper {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-  text-align: center;
-}
-.box {
-  border: 2px solid rgb(25, 60, 70);
-  border-radius: 15px;
-  margin: 5px;
-  padding: 10px;
-  font-size: 110%;
-}
-.lista-servicios {
-  background-size: cover;
-  text-align: left;
-}
-/*aprende html */
-.row {
-  display: flex;
-}
-.leftcolumn {
-  float: left;
-  width: 70%;
-}
-
-.rightcolumn {
-  float: left;
-  width: 30%;
-  padding-left: 20px;
-  margin: 3px;
-}
-
-.aprende-img {
-  background-color: #eae0ee;
-  width: 100%;
-  padding: 20px;
+  opacity: 85%;
+  transform: translateY(25px, -150px);
 }
 .card {
-  background-color: white;
-  padding: 20px;
-  margin: 12px 15px;
+  border: 0 !important;
+  margin-top: 1rem;
 }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* presupuestar html - contenido*/
-.paso-a-paso,
-.titulo-beneficios {
-  border: solid 2px #eee;
-  padding: 30px;
-}
-.contacto-formulario {
-  border-radius: 5px;
-  border: solid 2px rgb(25, 60, 70);
-  padding: 30px;
-  margin: 30px 130px;
-}
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 4px;
-  margin: 6px;
-  padding: 7px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input:focus {
-  border: rgb(25, 60, 70);
-}
-@media only screen and (max-width: 768px) {
-  .contacto-formulario {
-    margin: 10px;
+@media (min-width: 450px) {
+  .card {
+    display: flex;
+    justify-items: center !important;
   }
 }
-@media only screen and (max-width: 414px) {
-  .contacto-formulario {
-    margin: 0px;
+@media (min-width: 450px) {
+  #banner-plantillas {
+    margin: 3rem !important;
   }
-}
-/* presupuestar htlm - beneficios*/
-.beneficios {
-  margin: 16px 0;
-  padding: 15px;
-}
-.beneficios::after {
-  clear: both;
-  display: table;
-}
-.img-beneficios {
-  display: flex;
-  float: left;
-  margin-right: 20px;
-}
-/* presupuestar html - testimonios*/
-.titulo-testimonio {
-  border: solid 2px #eee;
-  padding: 30px;
-}
-.container {
-  border: 2px solid #ccc;
-  background-color: #eae0ee;
-  border-radius: 5px;
-  padding: 16px;
-  margin: 16px 0;
-}
-
-.container::after {
-  clear: both;
-  display: table;
-}
-
-.container img {
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-.container span {
-  font-size: 20px;
-  margin-right: 15px;
 }
