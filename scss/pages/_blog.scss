@@ -1,0 +1,11 @@
+/* ----blog page----- */
+.row-blog {
+  &__blog-article {
+    gap: 1rem;
+  }
+  &__blog-pagination {
+    color: $color-secundario;
+    margin-top: 2rem;
+  }
+}
+/* ----fin de blog page----- */
