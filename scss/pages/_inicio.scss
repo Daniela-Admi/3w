@@ -1,0 +1,16 @@
+/* ----index page----- */
+/* carrusel*/
+#corousel-content {
+  background-color: $color-primario;
+  color: $color-texto-b;
+  padding: 5px;
+  opacity: 85%;
+  transform: translateY(25px, -150px);
+}
+@media (min-width: 1200px) {
+  #carousel-img {
+    width: 1350px;
+    height: 650px;
+  }
+}
+/* ----end of index page----- */

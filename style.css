@@ -1,46 +1,133 @@
-/* paleta de colores 
-rgb(42, 43, 61) oscuro titulos
-rgb(176, 45, 114); fuccia 
-rgb(119, 89, 84) morado
-rgb(247, 232, 225) beige
-rgb(25, 60, 70) azul
-#EAE0EE fondo titulos
-*/
-
+/* ----variables----- */
+/* ----fin de variables----- */
+/* ----goblables----- */
 /* footer*/
 footer {
-  color: white;
-  background: linear-gradient(
-    336deg,
-    rgb(247, 232, 225) 0%,
-    rgb(176, 45, 114) 35%,
-    rgb(47, 162, 194) 100%
-  );
+  color: #f7e8e1;
+  background: linear-gradient(336deg, #f7e8e1 0%, #b02d72 35%, #2fa2c2 100%);
   margin: 0px 1px 1px 1px;
   padding: 5px;
-  text-align: center;
-}
+  text-align: center; }
+
+/*cards*/
+.card {
+  border: 0 !important;
+  margin-top: 1rem; }
+
+@media (min-width: 450px) {
+  .card {
+    display: flex;
+    justify-items: center !important; } }
+
+.nav-link:hover {
+  color: #b02d72 !important; }
+
+/* ----fin de globales----- */
+/* ----index page----- */
 /* carrusel*/
 @media (min-width: 1200px) {
   #carousel-img {
     width: 1350px;
-    height: 650px;
-  }
-}
+    height: 650px; } }
+
 #corousel-content {
-  background-color: rgb(47, 162, 194);
-  color: antiquewhite;
+  background-color: #2fa2c2;
+  color: #f7e8e1;
   padding: 5px;
   opacity: 85%;
-  transform: translateY(25px, -150px);
-}
-.card {
-  border: 0 !important;
-  margin-top: 1rem;
-}
-@media (min-width: 450px) {
-  .card {
-    display: flex;
-    justify-items: center !important;
-  }
-}
+  transform: translateY(25px, -150px); }
+
+/* ----end of index page----- */
+/* ----quienes somos page----- */
+/* ----fin de quienes somos page----- */
+/* ----productos y soluciones page----- */
+.servicios__ banner {
+  margin-top: 2rem; }
+
+.servicios__item {
+  padding: 2rem 1rem;
+  border: solid 1px #f7e8e1 !important;
+  gap: 1rem;
+  background-color: aliceblue; }
+
+.pasos__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px #f7e8e1 !important;
+  padding: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem; }
+
+/* ----end of productos y soluciones page----- */
+/* ----presupuestar page----- */
+.beneficios__title {
+  margin-top: 2rem; }
+
+.beneficios__item {
+  margin-top: 1rem; }
+
+.form-group {
+  margin-top: 1rem; }
+
+/* ----end of presupuestar page----- */
+/* ----blog page----- */
+section.index-blog ul li .overlay .blog-img {
+  position: relative;
+  margin-bottom: 31px;
+  overflow: hidden; }
+
+section.index-blog ul li .overlay .blog-img figure {
+  width: 487px;
+  height: 340px;
+  margin: 0;
+  transition: all 0.7s; }
+
+section.index-blog ul li .overlay a:hover .blog-img figure {
+  transform: scale(1.2); }
+
+section.index-blog ul li .overlay a:hover .blog-img .blog-img-inner {
+  background: rgba(0, 0, 0, 0.5); }
+
+section.index-blog ul li .overlay .blog-img .blog-img-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 10px solid rgba(255, 255, 255, 0.4); }
+
+section.blogsingle h3 {
+  padding: 0;
+  font-size: 25px;
+  margin-bottom: 28px;
+  line-height: 35px; }
+
+section.blogsingle .overlay .blog-img {
+  height: 375px; }
+
+section.blogsingle ul li .overlay a:first-child h5 {
+  margin-bottom: 30px; }
+
+section.blogsingle .similarposts ul li .overlay .blog-img {
+  margin-bottom: 10px; }
+
+section.blogsingle p:nth-child(10) {
+  margin-bottom: 28px; }
+
+section.blogsingle .similarposts h2,
+section.blogsingle .comments-posted h2,
+section.blogsingle .write-comment h2 {
+  margin-bottom: 25px; }
+
+section.blogsingle .similarposts {
+  padding-bottom: 5px;
+  margin-bottom: 30px; }
+
+section.blogsingle .comments-posted .comments {
+  margin-bottom: 40px; }
+
+section.blogsingle .write-comment button {
+  margin-bottom: 45px; }
+
+/* ----fin de blog page----- */

@@ -1,0 +1,25 @@
+/* ----productos y soluciones page----- */
+.servicios {
+  &__banner {
+    margin-top: 2rem;
+  }
+  &__item {
+    padding: 2rem 1rem;
+    border: solid 1px $color-texto-b !important;
+    gap: 1rem;
+    background-color: $color-background;
+  }
+}
+
+.pasos {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px $color-texto-b !important;
+    padding: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+/* ----end of productos y soluciones page----- */

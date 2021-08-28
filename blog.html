@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <title>3W</title>
+    <meta name="3W" content="Venta de servicios en desarrollo web y SEO" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="3W" content="Venta de servicios en desarrollo web y SEO" />
     <!-- Tag de Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--My css -->
@@ -16,8 +16,9 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <!-- css adicional para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
     <!-- menu con logo -->
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -73,44 +74,56 @@
       </nav>
     </header>
     <!--banner encabezado bienvenida al blog -->
-    <div class="container-fluid">
-      <img
-        src="imagen/blog.jpg"
-        alt="imagen tipo portada"
-        class="img-fluid d-block w-100"
-      />
-    </div>
+    <div class="container mt-5 p-3">
+      <div class="row justify-content-md-center">
+        <!-- card titulo y texto -->
+        <div class="card text-center">
+          <div class="card-title mt-5 mb-3">
+            <h2>Bienvenido a 3W BLOG</h2>
+          </div>
+          <div class="card-text mb-3">
+            <p>
+              En esta sección te brindamos tips para tu sitio web y te informamos de las ultimas tendencias.
+            </p>
+          </div>
+        </div>
     <!--serie de cards articulos-->
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-2 g-6">
-        <div class="col">
+      <div class="row">
+        <!--esto es un articulo-->
+        <div class="col-lg-8 col-md-8 col-sm-12">
           <div class="card">
-            <img
-              src="imagen/instagram-para-empresas.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <figure>
+              <img
+                src="imagen/instagram-para-empresas.jpg"
+                class="card-img-top"
+                alt="instagram para empresas"
+              />
+            </figure>
+          </div>
             <div class="card-body">
               <h5 class="card-title">Cómo usar Instagram para empresas</h5>
               <p class="card-text">
                 Descubre cómo crear un perfil de empresa en Instagram junto con
-                algunas de las grandes ventajas de esta red social.
+                algunas de las grandes ventajas de esta red social. Además, Instagram
+                es muy fácil de usar y el número de personas al que puedes llegar es muy grande.
               </p>
               <a
                 href="//www.ciudadano2cero.com/como-usar-instagram-empresas/"
-                class="link-info"
+                class="link-info" target="_blank"
                 >Leer más</a
               >
             </div>
           </div>
-        </div>
-        <div class="col">
+        <!--esto es otro articulo-->
+        <div class="col-lg-4 col-md-4 col-sm-12">
           <div class="card">
-            <img
-              src="imagen/requisitos-legales-latam.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <figure>
+              <img
+                src="imagen/requisitos-legales-latam.jpg"
+                class="card-img-top"
+                alt="imagen ilustrativa legales en latinoamerica"
+              />
+            </figure>
             <div class="card-body">
               <h5 class="card-title">
                 ¿Cuáles son los requisitos legales para vender por Internet
@@ -121,17 +134,20 @@
                 el mundo, ¿sabes que impuestos debes pagar?. En este post te lo
                 explicamos.
               </p>
-              <a href="#" class="link-info">Leer más</a>
+              <a href="#" class="link-info" target="_blank">Leer más</a>
             </div>
           </div>
         </div>
-        <div class="col">
+        <!--esto es otro articulo-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card">
-            <img
-              src="imagen/google-workspace.png"
-              class="card-img-top"
-              alt="..."
-            />
+            <figure>
+              <img
+                src="imagen/google-workspace.png"
+                class="card-img-top"
+                alt="google workspace"
+              />
+            </figure>
             <div class="card-body">
               <h5 class="card-title">Qué es Google Workspace</h5>
               <p class="card-text">
@@ -139,13 +155,20 @@
                 una cuenta gratuita y algunos de los ejemplos más útiles de la
                 plataforma.
               </p>
-              <a href="#" class="link-info">Leer más</a>
+              <a href="#" class="link-info" target="_blank">Leer más</a>
             </div>
           </div>
         </div>
-        <div class="col">
+        <!--esto es otro articulo-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card">
-            <img src="imagen/ux.png" class="card-img-top" alt="..." />
+            <figure>
+              <img
+                src="imagen/ux.png"
+                class="card-img-top"
+                alt="guia ux imagen"
+              />
+            </figure>
             <div class="card-body">
               <h5 class="card-title">
                 ¿Qué es UX? Guía para entender la Experiencia de Usuario y el
@@ -156,13 +179,20 @@
                 que vivimos fueron estrictamente planeadas para causar una
                 impresión determinada en ti.
               </p>
-              <a href="#" class="link-info">Leer más</a>
+              <a href="#" class="link-info "target="_blank">Leer más</a>
             </div>
           </div>
         </div>
-        <div class="col">
+        <!--esto es otro articulo-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card">
-            <img src="imagen/webinar.jpg" class="card-img-top" alt="..." />
+            <figure>
+              <img
+                src="imagen/webinar.jpg"
+                class="card-img-top"
+                alt="webinar"
+              />
+            </figure>
             <div class="card-body">
               <h5 class="card-title">
                 Cómo crear un webinar: la guía completa
@@ -174,19 +204,22 @@
               </p>
               <a
                 href="https://es.wix.com/blog/2021/08/como-crear-webinar"
-                class="link-info"
+                class="link-info" target="_blank"
                 >Leer más</a
               >
             </div>
           </div>
         </div>
-        <div class="col">
+        <!--esto es otro articulo-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card">
-            <img
-              src="imagen/comunity-mananger.png"
-              class="card-img-top"
-              alt="..."
-            />
+            <figure>
+              <img
+                src="imagen/comunity-mananger.png"
+                class="card-img-top"
+                alt="community mananger"
+              />
+            </figure>
             <div class="card-body">
               <h5 class="card-title">
                 Las mejores 50 herramientas para el Community Manager
@@ -198,19 +231,22 @@
               </p>
               <a
                 href="https://ernestogbustamante.com/25-herramientas-imprescindibles-y-gratuitas-para-el-community-manager/"
-                class="link-info"
+                class="link-info" target="_blank"
                 >Leer más</a
               >
             </div>
           </div>
         </div>
-        <div class="col">
+        <!--esto es otro articulo-->
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="card">
-            <img
-              src="imagen/mejorar-redaccion.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <figure>
+              <img
+                src="imagen/mejorar-redaccion.jpg"
+                class="card-img-top"
+                alt="mejorar redaccion"
+              />
+            </figure>
             <div class="card-body">
               <h5 class="card-title">
                 Guía rápida: cómo mejorar el estilo de tu redacción
@@ -222,39 +258,41 @@
               </p>
               <a
                 href="https://www.ciudadano2cero.com/guia-como-mejorar-estilo-redaccion/"
-                class="link-info"
+                class="link-info" target="_blank"
                 >Leer más</a
               >
             </div>
           </div>
         </div>
-        <div class="col">
+        <!--esto es otro articulo-->
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="card">
-            <img
-              src="imagen/como-ganar-dinero-con-tu-blog.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <figure>
+              <img
+                src="imagen/como-ganar-dinero-con-tu-blog.jpg"
+                class="card-img-top"
+                alt="como ganar dinero con tu blog"
+              />
+            </figure>
             <div class="card-body">
               <h5 class="card-title">
-                Cómo ganar dinero con un blog – Todo lo que necesitas saber
+                Cómo ganar dinero con un blog
               </h5>
               <p class="card-text">
                 La pregunta de “cómo ganar dinero con un blog” es inevitable
                 para un blogger. Por mucha ilusión con la que hayas arrancado,
-                el esfuerzo diario, tarde o temprano, hace necesario algún tipo
-                de retorno para seguir motivado.
+                el esfuerzo diario, hace necesario algún tipo de retorno para seguir motivado.
               </p>
               <a
                 href="https://www.ciudadano2cero.com/como-ganar-dinero-con-un-blog/"
-                class="link-info"
+                class="link-info" target="_blank"
                 >Leer más</a
               >
             </div>
           </div>
         </div>
-        <!--Paginacion-->
-        <ul class="pagination">
+        <!--Paginacion--> 
+        <ul class="pagination justify-content-center mt-3">
           <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
           <li class="page-item"><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -262,6 +300,7 @@
           <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
         </ul>
       </div>
+    </div>
     </div>
     <!--Pie de Pagina-->
     <footer>
@@ -286,11 +325,15 @@
       <!--copyright-->
       <p><strong> &copy; 2021 3W Todos los Derechos Reservados</strong></p>
     </footer>
+    <!-- bootstrapp js with Popper -->
   </body>
-  <!-- bootstrapp js with Popper -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"
   ></script>
+  <!-- js for animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- my js -->
+  <script src="script.js"></script>
 </html>

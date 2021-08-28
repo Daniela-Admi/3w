@@ -1,0 +1,50 @@
+/* ----goblables----- */
+
+/* footer*/
+footer {
+  color: $color-texto-b;
+  background: linear-gradient(336deg, $color-gradient);
+  margin: 0px 1px 1px 1px;
+  padding: 5px;
+  text-align: center;
+}
+
+/*cards*/
+.card {
+  border: 0 !important;
+  margin-top: 1rem;
+}
+@include respond-to("small") {
+  .card {
+    display: flex;
+    justify-items: center !important;
+  }
+}
+.nav-link:hover {
+  color: $color-secundario !important;
+}
+/*breakpoints*/
+$breakpoints: (
+  "small": (
+    min-width: 767px,
+  ),
+  "medium": (
+    min-width: 992px,
+  ),
+  "large": (
+    min-width: 1200px,
+  ),
+) !default;
+
+@mixin respond-to($breakpoint) {
+  /// Mixin to manage responsive breakpoints
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+/* ----fin de globales----- */
