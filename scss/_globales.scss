@@ -9,20 +9,6 @@ footer {
   text-align: center;
 }
 
-/*cards*/
-.card {
-  border: 0 !important;
-  margin-top: 1rem;
-}
-@include respond-to("small") {
-  .card {
-    display: flex;
-    justify-items: center !important;
-  }
-}
-.nav-link:hover {
-  color: $color-secundario !important;
-}
 /*breakpoints*/
 $breakpoints: (
   "small": (
@@ -46,5 +32,20 @@ $breakpoints: (
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
+}
+
+/*cards*/
+.card {
+  border: 0 !important;
+  margin-top: 1rem;
+}
+@include respond-to("small") {
+  .card {
+    display: flex;
+    justify-items: center !important;
+  }
+}
+.nav-link:hover {
+  color: $color-secundario !important;
 }
 /* ----fin de globales----- */
