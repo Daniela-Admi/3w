@@ -1,5 +1,4 @@
 /* ----goblables----- */
-
 /* footer*/
 footer {
   color: $color-texto-b;
@@ -8,18 +7,12 @@ footer {
   padding: 5px;
   text-align: center;
 }
-
 /*cards*/
 .card {
   border: 0 !important;
   margin-top: 1rem;
 }
-@include respond-to("small") {
-  .card {
-    display: flex;
-    justify-items: center !important;
-  }
-}
+
 .nav-link:hover {
   color: $color-secundario !important;
 }

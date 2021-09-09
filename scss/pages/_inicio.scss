@@ -1,9 +1,10 @@
 /* ----index page----- */
 /* carrusel*/
+
 #corousel-content {
   background-color: $color-primario;
   color: $color-texto-b;
-  padding: 5px;
+  padding: 1rem;
   opacity: 85%;
   transform: translateY(25px, -150px);
 }
@@ -21,4 +22,5 @@
     height: 24rem;
   }
 }
+
 /* ----end of index page----- */
