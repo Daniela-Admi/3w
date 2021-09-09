@@ -24,6 +24,10 @@ footer {
 /*breakpoints*/
 /* ----index page----- */
 /* carrusel*/
+#encabezado-mobile {
+  background-color: aliceblue;
+}
+
 #corousel-content {
   background-color: #2fa2c2;
   color: #f7e8e1;
