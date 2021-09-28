@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>3W</title>
+    <title>Inicio-3W</title>
     <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,8 +15,8 @@
     />
     <!-- Tag de Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--My css -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Tag de Favicon -->
+    <link rel="shortcut icon" href="imagen/logo.webp" />
     <!-- bootstrapp css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -26,6 +26,8 @@
     />
     <!-- animation css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--My css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- menu con logo -->
@@ -178,229 +180,294 @@
       </div>
     </div>
     <!--banner encabezado bienvenida en version mobile -->
-    <div class="container-fluid d-sm-none .d-md-block">
-      <div class="row justify-content-sm-center mt-5 p-1 ">
+    <div class="container-fluid d-sm-none .d-md-block" id="mobile">
+      <div class="row justify-content-sm-center mt-5 p-1">
         <!-- card titulo y texto -->
-          <div class="card text-center">
-            <div class="card-title mt-5 mb-3">
-              <h2>Bienvenido a 3W</h2>
-            </div>
-            <div class="card-text mb-3">
-              <p>
-                Creamos tu sitio web con las ultimas tendencias en diseño ux y herramientas SEO para que destaques en los motores de busqueda.
-              </p>
-              <a
-                href="productosysoluciones.html"
-                class="btn btn-outline-primary"
-              >
-                <strong>Empieza hoy</strong></a
-              >
-            </div>
+        <div class="card text-center">
+          <div class="card-title mb-3 mt-5">
+            <h2>Bienvenido a 3W</h2>
+            <img
+              src="imagen/banner-movil.jpeg"
+              alt="imagen de 5 personas sorprendidas"
+              class="img-fluid card-img"
+            />
           </div>
+          <div class="card-text mb-3">
+            <p>
+              <strong>
+                Creamos tu sitio web con las ultimas tendencias en diseño ux y
+                herramientas SEO para que destaques en los motores de
+                busqueda.</strong
+              >
+            </p>
+            <a href="productosysoluciones.html" class="btn btn-outline-primary">
+              <strong>Info</strong></a
+            >
+            <a href="presupuestar.html" class="btn btn-outline-primary">
+              <strong>Empezar</strong></a
+            >
+          </div>
+        </div>
       </div>
     </div>
-      <!--banner de servicios-->
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <!-- card title and text -->
-          <div class="card text-center">
-            <div class="card-title mt-3 mb-3">
-              <h2>Nuestros Servicios</h2>
-            </div>
-            <div class="card-text mb-3">
-              <p>
-                Nos renovamos constantemente para vos, diseñamos tu sitio web
-                con las ultimas tendencias en experiencia de usuario.
-              </p>
-            </div>
+    <hr />
+    <!--banner de servicios-->
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <!-- card title and text -->
+        <div class="card text-center">
+          <div class="card-title mt-3 mb-3">
+            <h2>Nuestros Servicios</h2>
           </div>
-          <!--card paginas web-->
-          <div class="card mb-12">
-            <div class="row g-0">
-              <div class="col-md-6" data-aos="fade-right">
-                <img
-                  src="imagen/desarrollo-web-landing-page.webp"
-                  class="img-fluid p-3"
-                  alt="Nos renovamos constantemente para vos, diseñamos tu sitio web con
+          <div class="card-text mb-3">
+            <p>
+              Nos renovamos constantemente para vos, diseñamos tu sitio web con
+              las ultimas tendencias en experiencia de usuario.
+            </p>
+          </div>
+        </div>
+        <!--card paginas web-->
+        <div class="card mb-12">
+          <div class="row g-0">
+            <div class="col-md-6" data-aos="fade-right">
+              <img
+                src="imagen/desarrollo-web-landing-page.webp"
+                class="img-fluid"
+                alt="Nos renovamos constantemente para vos, diseñamos tu sitio web con
                 las ultimas tendencias en experiencia de usuario."
-                  id="servicios-img"
-                />
-              </div>
-              <div class="col-md-6">
-                <div class="card-body mt-5">
-                  <h3 class="card-title mb-3">Paginas Web</h3>
-                  <p class="card-text">
-                    Creamos tu página web con diseños atractivos y novedosas
-                    funcionalidades para que tu negocio se destaque en internet.
-                  </p>
-                  <p class="card-text">
-                    Elegi el modo 3W Fast para obtener tu web funcional en 1
-                    semana o; contactate contanos tu proyecto y te lo
-                    confeccionamos exactamente como queres.
-                  </p>
-                  <a
-                    href="productosysoluciones.html"
-                    class="btn btn-outline-primary"
-                  >
-                    <strong>Leer más</strong></a
-                  >
-                </div>
+                id="servicios-img"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body mt-5">
+                <h3 class="card-title mb-3">Paginas Web</h3>
+                <p class="card-text">
+                  Creamos tu página web con diseños atractivos y novedosas
+                  funcionalidades para que tu negocio se destaque en internet.
+                </p>
+                <p class="card-text">
+                  Elegi el modo 3W Fast para obtener tu web funcional en 1
+                  semana o; contactate contanos tu proyecto y te lo
+                  confeccionamos exactamente como queres.
+                </p>
+                <a
+                  href="productosysoluciones.html"
+                  class="btn btn-outline-primary"
+                >
+                  <strong>Leer más</strong></a
+                >
               </div>
             </div>
           </div>
-          <!--card Tiendas Online-->
-          <div class="card mb-12">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="card-body mt-5">
-                  <h3 class="card-title mb-3">Tienda Online</h3>
-                  <p class="card-text">
-                    Te ayudamos a vender por internet con una Tienda Online. No
-                    pierdas oportunidades. Mostrá y vendé tus productos o
-                    servicios.
-                  </p>
-                  <p class="card-text">
-                    Cobra con MercadoPago, Paypal, Stripe, credito y debito.
-                    Crea giftcards y codigos de descuento.
-                  </p>
-                  <a
-                    href="productosysoluciones.html"
-                    class="btn btn-outline-primary"
-                  >
-                    <strong>Leer más</strong></a
-                  >
-                </div>
+        </div>
+        <!--card Tiendas Online-->
+        <div class="card mb-12">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="card-body mt-5">
+                <h3 class="card-title mb-3">Tienda Online</h3>
+                <p class="card-text">
+                  Te ayudamos a vender por internet con una Tienda Online. No
+                  pierdas oportunidades. Mostrá y vendé tus productos o
+                  servicios.
+                </p>
+                <p class="card-text">
+                  Cobra con MercadoPago, Paypal, Stripe, credito y debito. Crea
+                  giftcards y codigos de descuento.
+                </p>
+                <a
+                  href="productosysoluciones.html"
+                  class="btn btn-outline-primary"
+                >
+                  <strong>Leer más</strong></a
+                >
               </div>
-              <div class="col-md-6" data-aos="fade-left">
-                <img
-                  src="imagen/tienda-online.webp"
-                  class="img-fluid p-3"
-                  id="servicios-img"
-                  alt="Cobra con MercadoPago, Paypal, Stripe, credito y debito. 
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+              <img
+                src="imagen/tienda-online.webp"
+                class="img-fluid p-3"
+                id="servicios-img"
+                alt="Cobra con MercadoPago, Paypal, Stripe, credito y debito. 
                 Crea giftcards y codigos de descuento."
-                />
-              </div>
+              />
             </div>
           </div>
-          <!--card de seo-->
-          <div class="card mb-12">
-            <div class="row g-0">
-              <div class="col-md-6" data-aos="fade-right">
-                <img
-                  src="imagen/seo-organico-para-web.webp"
-                  class="img-fluid p-3"
-                  alt="Estrategia SEO para tu sitio web o ecommerce."
-                  id="servicios-img"
-                />
-              </div>
-              <div class="col-md-6">
-                <div class="card-body mt-5">
-                  <h3 class="card-title mb-3">SEO</h3>
-                  <p class="card-text">
-                    Incrementá considerablemente tus ventas y adquisición de
-                    clientes. Optimizamos el posicionamiento de tu comercio
-                    electrónico.
-                  </p>
-                  <p class="card-text">
-                    Estrategia personalizada. Agencia 100% SEO. Estrategia para
-                    ecommerce.
-                  </p>
-                  <a
-                    href="productosysoluciones.html"
-                    class="btn btn-outline-primary"
-                  >
-                    <strong>Leer más</strong></a
-                  >
-                </div>
+        </div>
+        <!--card de seo-->
+        <div class="card mb-12">
+          <div class="row g-0">
+            <div class="col-md-6" data-aos="fade-right">
+              <img
+                src="imagen/seo-organico-para-web.webp"
+                class="img-fluid p-3"
+                alt="Estrategia SEO para tu sitio web o ecommerce."
+                id="servicios-img"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body mt-5">
+                <h3 class="card-title mb-3">SEO</h3>
+                <p class="card-text">
+                  Incrementá considerablemente tus ventas y adquisición de
+                  clientes. Optimizamos el posicionamiento de tu comercio
+                  electrónico.
+                </p>
+                <p class="card-text">
+                  Estrategia personalizada. Agencia 100% SEO. Estrategia para
+                  ecommerce.
+                </p>
+                <a
+                  href="productosysoluciones.html"
+                  class="btn btn-outline-primary"
+                >
+                  <strong>Leer más</strong></a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- banner de plantillas de muestra para tu sitio web -->
-      <div class="container-fluid">
-        <div class="row justify-content-md-center">
-          <!-- card title and text -->
-          <div class="card text-center mb-8 p-2">
-            <div class="card-title mt-5 mb-3">
-              <h2>Modo Fast 3W con plantillas</h2>
-            </div>
-            <div class="card-text mb-3">
-              <p>
-                Todas nuestras plantillas son creadas por nuestros expertos y no
-                son reutilizables para otros clientes, elegi la tuya y asegurate
-                de tener tu web lista en poco tiempo.
-              </p>
-            </div>
+    </div>
+    <!-- banner de plantillas de muestra para tu sitio web -->
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <!-- card title and text -->
+        <div class="card text-center mb-8 p-2">
+          <div class="card-title mt-5 mb-3">
+            <h2>Modo Fast 3W con plantillas</h2>
           </div>
-          <!-- plantilla 1 -->
-          <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
-            <a
-              href="https://gridgum.com/theme-preview/minimal-free-template/"
-              target="_blank"
-            >
-              <img
-                src="imagen/plantilla_1.webp"
-                class="img-fluid card-img-top p-10 m-4"
-                alt="idea de pagina corporativa marketing"
-                id="plantilla-img"
-              />
-            </a>
-          </div>
-          <!-- plantilla 2 -->
-          <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
-            <a
-              href="https://gridgum.com/theme-preview/red-pegasus/"
-              target="_blank"
-            >
-              <img
-                src="imagen/plantilla_2.webp"
-                class="img-fluid card-img-top p-10 m-4"
-                alt="web-page hotel, reservaciones, suits"
-                id="plantilla-img"
-              />
-            </a>
-          </div>
-          <!-- plantilla 3 -->
-          <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
-            <a
-              href="https://gridgum.com/theme-preview/hotel-bootstrap/"
-              target="_blank"
-            >
-              <img
-                src="imagen/plantilla_3.webp"
-                class="img-fluid card-img-top p-10 m-4"
-                alt="sitio web corporativo"
-                id="plantilla-img"
-              />
-            </a>
-          </div>
-          <!-- plantilla 4 -->
-          <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
-            <a
-              href="https://gridgum.com/theme-preview/store-free-bootstrap-theme/"
-              target="_blank"
-            >
-              <img
-                src="imagen/plantilla_4.webp"
-                class="img-fluid card-img-top p-10 m-4"
-                alt="sitio web de musica"
-                id="plantilla-img"
-              />
-            </a>
+          <div class="card-text mb-3">
+            <p>
+              Todas nuestras plantillas son creadas por nuestros expertos y no
+              son reutilizables para otros clientes, elegi la tuya y asegurate
+              de tener tu web lista en poco tiempo.
+            </p>
           </div>
         </div>
-      </div>
-      <!-- banner de consultas -->
-      <div class="card text-center" data-aos="zoom-out">
-        <div class="card-body">
-          <h4 class="card-title m-3">¿Te quedaron dudas?</h4>
-          <p class="card-text">Charla con un experto.</p>
-          <!-- Button trigger modal -->
-          <a href="productosysoluciones.html" class="btn btn-outline-info">
-            <strong>Clic Aqui</strong></a
+        <!-- plantilla 1 -->
+        <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
+          <a
+            href="https://gridgum.com/theme-preview/red-pegasus/"
+            target="_blank"
           >
+            <img
+              src="imagen/plantilla_1.webp"
+              class="img-fluid card-img-top p-10 m-4"
+              alt="idea de pagina corporativa marketing"
+              id="plantilla-img"
+            />
+          </a>
         </div>
+        <!-- plantilla 2 -->
+        <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
+          <a
+            href="https://gridgum.com/theme-preview/hotel-bootstrap/"
+            target="_blank"
+          >
+            <img
+              src="imagen/plantilla_2.webp"
+              class="img-fluid card-img-top p-10 m-4"
+              alt="web-page hotel, reservaciones, suits"
+              id="plantilla-img"
+            />
+          </a>
+        </div>
+        <!-- plantilla 3 -->
+        <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
+          <a
+            href="https://gridgum.com/theme-preview/minimal-free-template/"
+            target="_blank"
+          >
+            <img
+              src="imagen/plantilla_3.webp"
+              class="img-fluid card-img-top p-10 m-4"
+              alt="sitio web corporativo"
+              id="plantilla-img"
+            />
+          </a>
+        </div>
+        <!-- plantilla 4 -->
+        <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
+          <a
+            href="http://gridgum.com/theme-preview/hit-radio-bootstrap-4/"
+            target="_blank"
+          >
+            <img
+              src="imagen/plantilla_4.webp"
+              class="img-fluid card-img-top p-10 m-4"
+              alt="sitio web de musica"
+              id="plantilla-img"
+            />
+          </a>
+        </div>
+        <!-- plantilla 5 -->
+        <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
+          <a
+            href="https://gridgum.com/theme-preview/pizzeria-testaresto/"
+            target="_blank"
+          >
+            <img
+              src="imagen/plantilla_5.webp"
+              class="img-fluid card-img-top p-10 m-4"
+              alt="sitio web de pizzeria"
+              id="plantilla-img"
+            />
+          </a>
+        </div>
+        <!-- plantilla 6 -->
+        <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
+          <a
+            href="https://gridgum.com/theme-preview/minimalist-bootstrap/"
+            target="_blank"
+          >
+            <img
+              src="imagen/plantilla_6.webp"
+              class="img-fluid card-img-top p-10 m-4"
+              alt="sitio web de barberia"
+              id="plantilla-img"
+            />
+          </a>
+        </div>
+        <!-- plantilla 7 -->
+        <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
+          <a
+            href="http://gridgum.com/theme-preview/multipurpose/"
+            target="_blank"
+          >
+            <img
+              src="imagen/plantilla_7.webp"
+              class="img-fluid card-img-top p-10 m-4"
+              alt="sitio web de musica"
+              id="plantilla-img"
+            />
+          </a>
+        </div>
+        <!-- plantilla 8 -->
+        <div class="card p-10" style="width: 18rem" data-aos="zoom-in">
+          <a
+            href="https://gridgum.com/theme-preview/dog-club-bootstrap-theme/"
+            target="_blank"
+          >
+            <img
+              src="imagen/plantilla_8.webp"
+              class="img-fluid card-img-top p-10 m-4"
+              alt="sitio web de musica"
+              id="plantilla-img"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- banner de consultas -->
+    <div class="card text-center" data-aos="zoom-out">
+      <div class="card-body">
+        <h4 class="card-title m-3">¿Te quedaron dudas?</h4>
+        <p class="card-text">Charla con un experto.</p>
+        <!-- Button trigger modal -->
+        <a href="productosysoluciones.html" class="btn btn-outline-info">
+          <strong>Clic Aqui</strong></a
+        >
       </div>
     </div>
     <!--Pie de Pagina-->

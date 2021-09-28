@@ -15,8 +15,8 @@
     />
     <!-- Tag de Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--My css -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Tag de Favicon -->
+    <link rel="shortcut icon" href="imagen/logo.webp" />
     <!-- bootstrapp css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -26,6 +26,8 @@
     />
     <!-- css adicional para animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--My css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- menu con logo -->
@@ -82,6 +84,7 @@
         </div>
       </nav>
     </header>
+    <!-- banner principal -->
     <div class="container mt-5 p-3">
       <div class="row justify-content-md-center">
         <!-- card titulo y texto -->
@@ -101,120 +104,124 @@
       </div>
       <div class="row justify-content-center round">
         <div class="col-lg-10 col-md-10">
-          <div class="card shadow-lg card-1">
-            <div class="card-body inner-card">
-              <div class="row justify-content-center">
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                  <div class="form-group mt-3">
-                    <label for="first-name">Nombre</label
-                    ><input
-                      type="text"
-                      class="form-control"
-                      id="first-name"
-                      placeholder="Tipea tu nombre"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="Mobile-Number">Número de Celular</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="Mobile-Number"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="inputEmail4">Tipo de proyecto</label>
-                    <select class="form-control">
-                      <option>Diseño Web</option>
-                      <option>Tienda Virtual</option>
-                      <option>SEO</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="time">Tiempo maximo del proyecto</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="time"
-                      placeholder=""
-                    />
-                  </div>
+          <div class="card-body inner-card">
+            <div class="row justify-content-center">
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="first-name">Nombre</label
+                  ><input
+                    type="text"
+                    class="form-control"
+                    id="first-name"
+                    placeholder="Tipea tu nombre"
+                  />
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                  <div class="form-group mt-3">
-                    <label for="last-name">Apellido</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="last-name"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Correo electronico</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="Evaluate Budget"
-                      >Franja horaria de contacto</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="Evaluate Budget"
-                      placeholder=""
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="inputEmail4">Pais</label>
-                    <select class="form-control">
-                      <option>Argentina</option>
-                      <option>Brasil</option>
-                      <option>Chile</option>
-                      <option>Colombia</option>
-                      <option>Mexico</option>
-                      <option>Panama</option>
-                      <option>Paraguay</option>
-                      <option>Peru</option>
-                      <option>Puerto Rico</option>
-                      <option>Venezuela</option>
-                      <option>Uruguay</option>
-                    </select>
-                  </div>
+                <div class="form-group">
+                  <label for="number">Número de Celular</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Dejanos un número de contacto"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail4">Tipo de proyecto</label>
+                  <select class="form-control">
+                    <option>Diseño Web</option>
+                    <option>Tienda Virtual</option>
+                    <option>SEO</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="time">Tiempo maximo del proyecto</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Selecciona</option>
+                    <option value="1">Hasta 2 semanas</option>
+                    <option value="2">Hasta 1 mes</option>
+                    <option value="3">Tengo tiempo de sobra</option>
+                  </select>
                 </div>
               </div>
-              <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-10 col-12">
-                  <div class="form-group files">
-                    <label class="my-auto">Sube tu archivo</label>
-                    <input id="file" type="file" class="form-control" />
-                  </div>
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label for="last-name">Apellido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="last-name"
+                    placeholder="tu apellido"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Correo electronico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="nombre@example.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="Evaluate Budget"
+                    >Franja horaria de contacto</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Selecciona</option>
+                    <option value="1">Entre las 8:00 y las 11:00 AM</option>
+                    <option value="2">Entre las 12:00 y las 18:00 PM</option>
+                    <option value="3">Indistinto</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail4">Pais</label>
+                  <select class="form-control">
+                    <option>Argentina</option>
+                    <option>Brasil</option>
+                    <option>Chile</option>
+                    <option>Colombia</option>
+                    <option>Mexico</option>
+                    <option>Panama</option>
+                    <option>Paraguay</option>
+                    <option>Peru</option>
+                    <option>Puerto Rico</option>
+                    <option>Venezuela</option>
+                    <option>Uruguay</option>
+                  </select>
                 </div>
               </div>
-              <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-10 col-12">
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea2">Mensaje</label>
-                    <textarea
-                      class="form-control rounded-0"
-                      id="exampleFormControlTextarea2"
-                      rows="5"
-                    ></textarea>
-                  </div>
-                  <div class="mb-2 mt-4">
-                    <div class="text-right">
-                      <button type="button" class="btn btn-outline-primary">
-                        <small class="font-weight-bold"
-                          >Enviar Formulario</small
-                        >
-                      </button>
-                    </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-12 col-lg-10 col-12">
+                <div class="form-group files">
+                  <label class="my-auto">Sube tu archivo</label>
+                  <input id="file" type="file" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-12 col-lg-10 col-12">
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea2">Mensaje</label>
+                  <textarea
+                    class="form-control rounded-0"
+                    id="exampleFormControlTextarea2"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="mb-2 mt-4">
+                  <div class="text-right">
+                    <button type="submit" class="btn btn-outline-primary">
+                      <strong>Enviar Formulario</strong>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -224,9 +231,7 @@
       </div>
     </div>
     <!--fin de formulario de contacto-->
-
     <!--seccion beneficios-->
-    <!-- Services Section-->
     <section class="beneficios bg-gray">
       <div class="container">
         <div class="beneficios__title text-center mb-5">

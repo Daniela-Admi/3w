@@ -1,5 +1,9 @@
 /* ----goblables----- */
 /* footer*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
 footer {
   color: $color-texto-b;
   background: linear-gradient(336deg, $color-gradient);
