@@ -4,7 +4,13 @@
 /* footer*/
 footer {
   color: #f7e8e1;
-  background: linear-gradient(336deg, #f7e8e1 0%, #b02d72 35%, #2fa2c2 100%);
+  background: linear-gradient(
+    336deg,
+    #ff9600 0%,
+    #fe531e 26%,
+    #c022a5 57%,
+    #1bb8f9 100%
+  );
   margin: 0px 1px 1px 1px;
   padding: 5px;
   text-align: center;
@@ -13,7 +19,6 @@ footer {
 /*cards*/
 .card {
   border: 0 !important;
-  margin-top: 1rem;
 }
 
 @media (min-width: 450px) {
@@ -24,7 +29,7 @@ footer {
 }
 
 .nav-link:hover {
-  color: #b02d72 !important;
+  color: #fe531e !important;
 }
 
 /* ----fin de globales----- */

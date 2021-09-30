@@ -1,8 +1,12 @@
 /* ----variables----- */
-$color-primario: rgb(47, 162, 194);
-$color-secundario: rgb(176, 45, 114);
+$color-primario: #fe531e;
+$color-secundario: #1bb8f9;
 $color-texto-b: rgb(247, 232, 225);
-$color-gradient: rgb(247, 232, 225) 0%, rgb(176, 45, 114) 35%,
-  rgb(47, 162, 194) 100%;
+$color-gradient: -moz-linear-gradient(
+  #ff9600 0%,
+  #fe531e 26%,
+  #c022a5 57%,
+  #1bb8f9 100%
+);
 $color-background: rgb(240, 248, 255);
 /* ----fin de variables----- */

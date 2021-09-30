@@ -12,11 +12,12 @@ footer {
   text-align: center;
 }
 /*cards*/
+
 .card {
   border: 0 !important;
-  margin-top: 0.5rem;
 }
 .nav-link:hover {
-  color: $color-secundario !important;
+  color: $color-primario !important;
+  border: solid 1px;
 }
 /* ----fin de globales----- */
