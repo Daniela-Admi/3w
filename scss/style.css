@@ -18,7 +18,7 @@ footer {
 /*cards*/
 .card {
   border: 0 !important;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .nav-link:hover {
@@ -53,12 +53,14 @@ footer {
   }
 }
 
-#banner-movil {
-  border: 3px solid #2fa2c2;
-}
-
 /* ----end of index page----- */
 /* ----quienes somos page----- */
+.img-testimonio {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* ----fin de quienes somos page----- */
 /* ----productos y soluciones page----- */
 .servicios__banner {
