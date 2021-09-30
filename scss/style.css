@@ -39,10 +39,6 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  #carousel-img {
-    width: 50rem;
-    height: 32rem;
-  }
   #plantilla-img {
     width: 23rem;
     height: 15rem;
